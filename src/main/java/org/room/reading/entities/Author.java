@@ -56,4 +56,8 @@ public class Author {
         result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
         return result;
     }
+
+    public String toString() {
+        return fio;
+    }
 }
