@@ -5,9 +5,17 @@
 
       <view-state id="main">
 
-            <!--<on-render>-->
-            <!--<evaluate expression="bookDAOImpl.books"/>-->
-            <!--</on-render>-->
+            <transition on="searchByLetter">
+                  <evaluate expression="libraryFacade.searchBooksByLetter()" />
+            </transition>
+
+            <transition on="searchByGenre">
+                  <evaluate expression="libraryFacade.searchBooksByGenre()" />
+            </transition>
+
+            <transition on="searchByText">
+                  <evaluate expression="libraryFacade.searchBooksByText()" />
+            </transition>
 
       </view-state>
 

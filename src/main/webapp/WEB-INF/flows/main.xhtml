@@ -20,8 +20,10 @@
         <h:form id="booksForm" >
 
 
-            <p:dataGrid rowIndexVar="rowIndex" columns="2" lazy="true" var="b" value="${libraryFacade.books}"  id="booksList" styleClass="books_list"  paginator="true" rows="4" paginatorPosition="bottom"
-                        rowsPerPageTemplate="4,10,20" paginatorTemplate="{RowsPerPageDropdown} {PageLinks}"  paginatorAlwaysVisible="true" emptyMessage="">
+            <p:dataGrid rowIndexVar="rowIndex" columns="2" lazy="true" var="b" value="${libraryFacade.books}"
+                        id="booksList" styleClass="books_list"  paginator="true" rows="4" paginatorPosition="bottom"
+                        rowsPerPageTemplate="4,10,20" paginatorTemplate="{RowsPerPageDropdown} {PageLinks}"
+                        paginatorAlwaysVisible="true" emptyMessage="">
 
 
                 <div class="item">

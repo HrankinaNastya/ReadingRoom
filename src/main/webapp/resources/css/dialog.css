@@ -75,7 +75,7 @@ select,
     height: 6px;
     overflow: hidden;
     cursor: pointer;
-    background: url("#{resource['images:select.png']}")  0 0 no-repeat;
+    /*background: url("#{resource['images:select.png']}")  0 0 no-repeat;*/
 }
 .selectBox-dropdown-menu {
     position: absolute;
@@ -216,7 +216,7 @@ select,
 }
 
 .loaded .fileupload-buttonbar{
-    background: url("/ReadingRoom/javax.faces.resource/load-pdf.png.xhtml?ln=images") repeat-x;
+    background: url("/JsfLibrary_22_h/javax.faces.resource/load-pdf.png.xhtml?ln=images") repeat-x;
     border-radius: 3px;
     border: 1px solid #e5e5e5;
     color: #616161;
