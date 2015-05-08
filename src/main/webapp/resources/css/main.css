@@ -361,29 +361,30 @@ body {
 
 
 .noborder-button-genre{
-    color: #888;
-    display: block;
-    border: 0px none;
-    font-family: Arial,sans-serif;
-    font-size: 1.1em;
-    background: none repeat scroll 0% 0% transparent;
-    text-align: center;
-    list-style: outside none none;
-    width: 100%;
-    padding-left: 10px;
-    cursor: pointer;
-    box-shadow: none;
-    margin-top: 5px;
-    display: block;
-    color: #7F7F7F;
-    height: 35px;
-    font-weight: normal;
+    color: #888 !important;
+    display: block !important;
+    border: 0px none !important;
+    font-family: Arial,sans-serif !important;
+    font-size: 1.1em !important;
+    background: none repeat scroll 0% 0% transparent !important;
+    -webkit-background: none repeat scroll 0% 0% transparent !important;
+    text-align: center !important;
+    list-style: outside none none !important;
+    width: 100% !important;
+    padding-left: 10px !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    margin-top: 5px !important;
+    display: block !important;
+    color: #7F7F7F !important;
+    height: 35px !important;
+    font-weight: normal !important;
     text-decoration: underline !important;
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 
 .noborder-button-genre span{
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 
 .left-menu li:hover{
