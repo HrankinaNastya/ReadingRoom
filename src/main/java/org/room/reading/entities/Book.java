@@ -1,12 +1,12 @@
 package org.room.reading.entities;
 
-import java.io.Serializable;
 import java.util.Arrays;
+
 
 /**
  * Created by Анастасия on 03.05.2015.
  */
-public class Book implements Serializable {
+public class Book implements java.io.Serializable {
 
     private Long id;
     private Author author;
@@ -21,11 +21,10 @@ public class Book implements Serializable {
     private String descr;
     private Integer rating;
     private Long voteCount;
-    private long publisherId;
-    private String bookcol;
 
     public Book() {
     }
+
 
     public Book(Long id, Author author, Genre genre, Publisher publisher, String name, byte[] content, Integer pageCount, String isbn, Integer publishYear, byte[] image, String descr, Integer rating, Long voteCount) {
         this.id = id;
@@ -40,26 +39,6 @@ public class Book implements Serializable {
         this.image = image;
         this.descr = descr;
         this.rating = rating;
-        this.voteCount = voteCount;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public void setPageCount(int pageCount) {
-        this.pageCount = pageCount;
-    }
-
-    public void setPublishYear(int publishYear) {
-        this.publishYear = publishYear;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
-
-    public void setVoteCount(String voteCount) {
         this.voteCount = voteCount;
     }
 
@@ -209,19 +188,5 @@ public class Book implements Serializable {
         return result;
     }
 
-    public long getPublisherId() {
-        return publisherId;
-    }
 
-    public void setPublisherId(long publisherId) {
-        this.publisherId = publisherId;
-    }
-
-    public String getBookcol() {
-        return bookcol;
-    }
-
-    public void setBookcol(String bookcol) {
-        this.bookcol = bookcol;
-    }
 }

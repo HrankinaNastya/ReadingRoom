@@ -1,4 +1,3 @@
 # Directories #
 target/
-*.iml
 .idea/
