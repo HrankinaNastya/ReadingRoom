@@ -4,6 +4,7 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
+	   xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/mvc
@@ -68,9 +69,12 @@
               </mvc:interceptor>
        </mvc:interceptors>
 
-       <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-              <property name="jndiName" value="java:jboss/datasources/Library"/>
-       </bean>
+       <bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		p:driverClassName="${jdbc.driverClassName}" 
+		p:url="${jdbc.databaseurl}"
+		p:username="${jdbc.username}" 
+		p:password="${jdbc.password}" />
 
 
        <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
